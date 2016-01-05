@@ -1,0 +1,127 @@
+.card {
+    position: relative;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .75rem;
+    background-color: #34495e;
+    border: 1px solid #34495e;
+    border-radius: .25rem;
+}
+.card-block {
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.hexagon {
+  position: relative;
+  width: 200px; 
+  height: 115.47px;
+  margin: 72.74px 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+  background-size: auto 230.9401px;
+  background-position: center;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 141.42px;
+  height: 141.42px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 29.29px;
+}
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 200.0000px;
+  height: 115.47005383792516px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -70.7107px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -70.7107px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 200.0000px;
+  height: 115.4701px;
+  z-index: 2;
+  background: inherit;
+}
+
+.margin-top{
+    margin-top:15em;
+}
+
+.midnight-blue{
+    background-color: #2c3e50;
+}
+
+.header{
+    font-size:32pt;
+    color:white;
+}
+
+.city{
+    color:white;
+    padding: .75rem 1rem;
+    display: inline-block;
+    margin-bottom:0px;
+    margin-right:1rem;
+}
+
+.be{
+        background-color: #f1c40f;
+}
+.am{
+        background-color: #e67e22;
+}
+.re{
+        background-color: #3498db;
+}
+.mu{
+        background-color: #27ae60;
+}
+.ve{
+        background-color: #8e44ad;
+}
+.ro{
+        background-color: #e74c3c;
+}
+.vi{
+        background-color: #e74c3c;
+}
