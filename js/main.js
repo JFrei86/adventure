@@ -7,6 +7,14 @@ $(function(){
 		router(page);
 	});
 	route(window.location.hash);
+    
+    
+    
+    $('.item').popover({
+        trigger: 'focus',
+        animation: true,
+        container: 'body'
+    });
 });
 function openMenu(){
 	$('#menu a img').toggleClass('soc-button', 250);
