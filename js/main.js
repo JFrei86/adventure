@@ -6,9 +6,7 @@ $(function(){
 		console.log(page);
 		router(page);
 	});
-	route(window.location.hash);
-    
-    
+	route(window.location.hash);   
     
     $('.item').popover({
         trigger: 'focus',
@@ -16,6 +14,16 @@ $(function(){
         container: 'body'
     });
 });
+$('#myModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var title = button.data('title') // Extract info from data-* attributes
+  var photoUrl = button.data('photo-url')
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text(title)
+  modal.find('.modal-body img').attr('src', photoUrl)
+})
 function openMenu(){
 	$('#menu a img').toggleClass('soc-button', 250);
 	$('#menu').toggleClass('social-banner', 250);

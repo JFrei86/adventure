@@ -192,3 +192,7 @@ article {
 .item:nth-child(n+2) {
 	margin-top: -56px;
 }
+
+#lightbox {
+	border-radius: 3px;
+}
