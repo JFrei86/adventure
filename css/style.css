@@ -127,6 +127,17 @@ article {
 	margin-top: -55px;
 }
 
+#lightbox {
+	border-radius: 3px;
+}
+.alert {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+.alert-info {
+    background-color: #FFFFFF;
+}
+
 @media (max-width: 1015px) {
 	#lab {
 	width: 100%;
@@ -173,7 +184,13 @@ article {
 .item:nth-child(n+3) {
 	margin-top: -56px;
 }
-
+#lightbox {
+	border-radius: 3px;
+}
+.alert {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
 }
 
 @media (max-width: 450px) {
@@ -195,4 +212,9 @@ article {
 
 #lightbox {
 	border-radius: 3px;
+}
+.alert {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
 }
