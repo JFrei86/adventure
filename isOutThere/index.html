@@ -13,7 +13,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400|Montserrat' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="../css/main.css" rel="stylesheet">
@@ -29,10 +29,27 @@
   </head>
 
   <body class="midnight-blue">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content" style="border-radius:4px;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Reykjavik Sunrise</h4>
+                </div>
+                <div class="modal-body" style="padding:0px;">
+                    <img width="100%" id="photoBox" src="../lightbox/1.jpg" style="border-bottom-left-radius:4px;border-bottom-right-radius:4px;">
+                </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       <div class="container">
           <div class="row">
               <div class="col-md-3  margin-top">
                   <h1 class="header">Adventure is out there.</h1>
+                  <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Psst! Hey There.</strong> Click on the hexagons to see the pictures bigger!
+                  </div>
                   <h3 class="city re">Reykjavik</h3>
                   <h3 class="city am">Amsterdam</h3>
                   <h3 class="city be">Berlin</h3>
@@ -45,101 +62,284 @@
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/1.jpg')" data-toggle="modal" data-target="#myModal" data-title="Reykjavik Sunrise" data-photo-url="../lightbox/1.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/2.jpg')" data-toggle="modal" data-target="#myModal" data-title="Golden Circle" data-photo-url="../lightbox/2.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/3.jpg')"  data-toggle="modal" data-target="#myModal" data-title="Golden Circle" data-photo-url="../lightbox/3.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/4.jpg')"  data-toggle="modal" data-target="#myModal" data-title="Gulfoss Waterfall" data-photo-url="../lightbox/4.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/5.jpg')"  data-toggle="modal" data-target="#myModal" data-title="Reykjavik from Hallgrímskirkja" data-photo-url="../lightbox/5.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/6.jpg')" data-toggle="modal" data-target="#myModal" data-title="I AMsterdam" data-photo-url="../lightbox/6.jpg" ></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/7.jpg')" data-toggle="modal" data-target="#myModal" data-title="Amsterdam Evening" data-photo-url="../lightbox/7.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2"  style="background-image: url('../photos/8.jpg')"  data-toggle="modal" data-target="#myModal" data-title="My Royal Chariot to Berlin" data-photo-url="../lightbox/8.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/10.jpg')" data-toggle="modal" data-target="#myModal" data-title="Bauhaus Sculpture" data-photo-url="../lightbox/10.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/11.jpg')" data-toggle="modal" data-target="#myModal" data-title="Bauhaus Archives" data-photo-url="../lightbox/11.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2"  style="background-image: url('../photos/12.jpg')" data-toggle="modal" data-target="#myModal" data-title="Berlin WWII Monument" data-photo-url="../lightbox/12.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/13.jpg')"  data-toggle="modal" data-target="#myModal" data-title="Berlin Wall" data-photo-url="../lightbox/13.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/14.jpg')"  data-toggle="modal" data-target="#myModal" data-title="" data-photo-url="../lightbox/14.jpg"></div>
                           </div>
                       </div>
                     </div>
                     <div class="item">		
                       <div class="hexagon">
                           <div class="hexagon-in1">
-                              <div class="hexagon-in2"></div>
+                              <div class="hexagon-in2" style="background-image: url('../photos/15.jpg')" data-toggle="modal" data-target="#myModal" data-title="Freidrichstadt Palast Berlin" data-photo-url="../lightbox/15.jpg"></div>
                           </div>
                       </div>
                     </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/16.jpg')"  data-toggle="modal" data-target="#myModal" data-title="" data-photo-url="../lightbox/16.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/17.jpg')"  data-toggle="modal" data-target="#myModal" data-title="English Gardens Munich" data-photo-url="../lightbox/17.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/18.jpg')" data-toggle="modal" data-target="#myModal" data-title="Swan in English Gardens" data-photo-url="../lightbox/18.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/19.jpg')" data-toggle="modal" data-target="#myModal" data-title="Nymphenburg Palace Munich" data-photo-url="../lightbox/19.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/20.jpg')" data-toggle="modal" data-target="#myModal" data-title="Nymphenburg Palace Munich" data-photo-url="../lightbox/20.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/21.jpg')" data-toggle="modal" data-target="#myModal" data-title="Marienplatz Munich" data-photo-url="../lightbox/21.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/22.jpg')" data-toggle="modal" data-target="#myModal" data-title="Deutches Museum Munich" data-photo-url="../lightbox/22.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/23.jpg')" data-toggle="modal" data-target="#myModal" data-title="Austrian Alps" data-photo-url="../lightbox/23.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/24.jpg')" data-toggle="modal" data-target="#myModal" data-title="Italian Countryside" data-photo-url="../lightbox/24.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/25.jpg')" data-toggle="modal" data-target="#myModal" data-title="Welcomed in Venice" data-photo-url="../lightbox/25.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/26.jpg')"  data-toggle="modal" data-target="#myModal" data-title="Venice" data-photo-url="../lightbox/26.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/27.jpg')"  data-toggle="modal" data-target="#myModal" data-title="Carnival Masks" data-photo-url="../lightbox/27.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/28.jpg')" data-toggle="modal" data-target="#myModal" data-title="Venezia Zombie Walk" data-photo-url="../lightbox/28.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/29.jpg')" data-toggle="modal" data-target="#myModal" data-title="Venezia Zombie Walk" data-photo-url="../lightbox/29.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/30.jpg')" data-toggle="modal" data-target="#myModal" data-title="Venezia Zombie Walk" data-photo-url="../lightbox/30.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/31.jpg')" data-toggle="modal" data-target="#myModal" data-title="Venezia Zombie Walk" data-photo-url="../lightbox/31.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/32.jpg')" data-toggle="modal" data-target="#myModal" data-title="Murano, Veneto" data-photo-url="../lightbox/32.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/33.jpg')" data-toggle="modal" data-target="#myModal" data-title="Murano, Veneto" data-photo-url="../lightbox/33.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/34.jpg')" data-toggle="modal" data-target="#myModal" data-title="Lido Island Beach, Venice" data-photo-url="../lightbox/34.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/35.jpg')" data-toggle="modal" data-target="#myModal" data-title="Lido Island Beach, Venice" data-photo-url="../lightbox/35.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/36.jpg')" data-toggle="modal" data-target="#myModal" data-title="Burano, Veneto" data-photo-url="../lightbox/36.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/37.jpg')" data-toggle="modal" data-target="#myModal" data-title="Burano, Veneto" data-photo-url="../lightbox/37.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/38.jpg')" data-toggle="modal" data-target="#myModal" data-title="Torchello, Veneto" data-photo-url="../lightbox/38.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/39.jpg')" data-toggle="modal" data-target="#myModal" data-title="Torchello Bell Tower View" data-photo-url="../lightbox/39.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/40.jpg')" data-toggle="modal" data-target="#myModal" data-title="Torchello, Veneto" data-photo-url="../lightbox/40.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="item">		
+                      <div class="hexagon">
+                          <div class="hexagon-in1">
+                              <div class="hexagon-in2" style="background-image: url('../photos/41.jpg')" data-toggle="modal" data-target="#myModal" data-title="Teatro La Fenice" data-photo-url="../lightbox/41.jpg"></div>
+                          </div>
+                      </div>
+                    </div>
+                    
                   </article>
               </div>
               <!--<div class="col-md-3">
@@ -155,7 +355,6 @@
                     </div>
               </div>-->
           </div>
-          
           <div class="row">
               <p style="color:white;margin-top:5em;">Copyright 2016 Jesse Freitas</p>
           </div>
@@ -166,7 +365,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/docs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

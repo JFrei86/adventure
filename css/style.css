@@ -124,7 +124,24 @@ article {
 }
 
 .item:nth-child(n+5) {
-  margin-top: -55px;
+	margin-top: -55px;
+}
+
+#lightbox {
+	border-radius: 3px;
+}
+.alert {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+.alert-info {
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 1015px) {
+	#lab {
+	width: 100%;
+}
 }
 
 @media (max-width: 820px) {
@@ -166,7 +183,13 @@ article {
 .item:nth-child(n+3) {
 	margin-top: -56px;
 }
-
+#lightbox {
+	border-radius: 3px;
+}
+.alert {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
 }
 
 @media (max-width: 450px) {
@@ -185,4 +208,13 @@ article {
 .item:nth-child(n+2) {
 	margin-top: -56px;
 }
+
+#lightbox {
+	border-radius: 3px;
+}
+.alert {
+    border-radius: 0px !important;
+    border: 0px !important;
+}
+>>>>>>> ced99cd6cc0d6cb4a2ca7fb46bc12add3213054c
 }
